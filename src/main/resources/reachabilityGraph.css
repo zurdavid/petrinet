@@ -1,0 +1,76 @@
+/*
+	style sheet for reachability graph
+*/
+
+graph {
+    padding: 70px;
+    fill-mode: gradient-vertical;
+    fill-color:  #d8d9d6, #d6f1c1;
+}
+
+node {
+    size-mode: fit;
+    padding: 12px, 2px;
+
+    fill-color: #FFFFFF;
+
+    shape: rounded-box;
+
+    text-color: #000000;
+    text-size: 16;
+
+    stroke-mode: plain;
+    stroke-color: #000000;
+    stroke-width: 2px;
+
+}
+
+node.startnode {
+    fill-color: #99CC99;
+    stroke-color: #007D00;
+}
+
+/* 
+  hilight markings which show that Petri net is bounded
+*/
+node.bounded {
+    fill-color: #FFCC00;
+}
+
+/*
+  hilight 
+*/
+
+node.fired {
+    text-style: bold;
+    text-color: #aa0000;
+    stroke-color: #aa0000;
+    stroke-width: 3px;
+}
+
+node:clicked {
+    stroke-width: 3px;
+    stroke-color: #0000FF;
+}
+
+edge {
+    fill-color: #000000;
+    text-color: black;
+    arrow-shape: arrow;
+    text-style: bold;
+    arrow-size: 12px, 8px;
+    text-size: 14;
+    text-alignment: center;
+
+    text-background-mode: rounded-box;
+    text-background-color: white;
+}
+
+edge.fired {
+    fill-color: #FF0000;
+    text-color: #aa0000;
+}
+
+edge.path {
+    fill-color: #FFCC00;
+}

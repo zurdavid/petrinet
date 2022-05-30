@@ -1,0 +1,123 @@
+/*
+  style sheet for Petri net graph
+*/
+
+graph {
+   padding: 70px;
+   fill-mode: gradient-vertical;
+   fill-color:  #d8d9d6, #d6f1c1;
+}
+/* old color: #E7F0FF */
+
+node {
+	size: 30px;
+	
+	text-color: #000000;
+	text-size: 14;
+
+	stroke-mode: plain;
+	stroke-color: #000000;
+	stroke-width: 1px;
+  
+  text-alignment: under;
+  text-background-mode: rounded-box;
+  text-background-color: white;
+}
+
+node:clicked {
+  stroke-width: 3px;
+  stroke-color: #ff00f4;
+}
+
+node.place {
+  shape: box;
+}
+
+/* style attributes for selected place */
+node.highlight {
+	text-style: bold;
+	
+	stroke-color: #cc0000;
+	stroke-width: 3px;
+}
+
+node.transition {
+  shape: box;
+  fill-color: #ef7771;
+}
+
+node.transitionEnabled {
+  shape: box;
+  fill-color: #77ddaa;
+}
+
+edge {
+	fill-color: #000000;
+	text-color: black;
+	arrow-shape: arrow;
+	arrow-size: 12px, 8px;
+	text-size:  14;
+  text-alignment: along;
+  
+  text-background-mode: rounded-box;
+  text-background-color: white;
+}
+
+
+/*
+  images showing number of tokens in place
+*/
+node.m0 {
+  fill-image: url('digits/0.png');
+  fill-mode: image-scaled;
+}
+
+node.m1 {
+  fill-image: url('digits/1.png');
+  fill-mode: image-scaled;
+}
+
+node.m2 {
+  fill-image: url('digits/2.png');
+  fill-mode: image-scaled;
+}
+
+node.m3 {
+  fill-image: url('digits/3.png');
+  fill-mode: image-scaled;
+}
+
+node.m4 {
+  fill-image: url('digits/4.png');
+  fill-mode: image-scaled;
+}
+
+node.m5 {
+  fill-image: url('digits/5.png');
+  fill-mode: image-scaled;
+}
+
+node.m6 {
+  fill-image: url('digits/6.png');
+  fill-mode: image-scaled;
+}
+
+node.m7 {
+  fill-image: url('digits/7.png');
+  fill-mode: image-scaled;
+}
+
+node.m8 {
+  fill-image: url('digits/8.png');
+  fill-mode: image-scaled;
+}
+
+node.m9 {
+  fill-image: url('digits/9.png');
+  fill-mode: image-scaled;
+}
+
+node.m10 {
+  fill-image: url('digits/10.png');
+  fill-mode: image-scaled;
+}

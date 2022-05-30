@@ -1,0 +1,9 @@
+# IDEs
+.idea
+
+# build
+target
+out
+
+# other
+Beispiele
